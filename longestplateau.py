@@ -5,7 +5,9 @@
 
   less than the previous value and next value respectively. So a plateau is found and 
 
-  our code is to find longest one of these plateaus found.
+  our code is to find longest one of these plateaus found. Should return length of subarray
+  
+  and position of first element of that subarray.
 
   '''
 
@@ -26,9 +28,6 @@ while i < len(a):
 			len1.append(leng)
 			posi = i + 1 - leng
 			pos.append(posi)
-			
-
-			
 	i += 1
 print(max(len1))
 print(pos[len1.index(max(len1))])
