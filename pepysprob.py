@@ -1,3 +1,4 @@
+
 import random
 import sys
 totals = [0.0]*3
@@ -23,4 +24,4 @@ for t in range(trials):
 		totals[2] += 1
 prob = [x/trials for x in totals] 
 print prob
-print totals
+
