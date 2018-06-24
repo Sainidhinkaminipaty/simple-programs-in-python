@@ -13,12 +13,17 @@ while True:
 solution = ['7']#common solution 
 for i in problem:
     solution += prob_dict[i]
-    
+     print("generate solution #"+str(prob_dict[i])+" for problem "+i)
 solution_int = []
 solution_int += [int(x) for x in solution]
 print(sorted(solution_int))
 print("generate solutions",end = ' ')
 for i in sorted(solution_int):
-    print(i,end=' ')
+    if sorted(solution_int).index(i)==len(sorted(solution_int))-1:
+        print(' and '+str(i))
+    elif sorted(solution_int).index(i)==len(sorted(solution_int))-2:
+        print(i,end='')
+    else:
+        print(i,end=',')
         
 
