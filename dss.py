@@ -13,7 +13,9 @@ while True:
 solution = ['7']#common solution 
 for i in problem:
     solution += prob_dict[i]
-     print("generate solution #"+str(prob_dict[i])+" for problem "+i)
+    
+    print("generate solution #"+str(prob_dict[i])+" for problem "+i)
+    #you can add a solution here.and solution to each problem gets solved.
 solution_int = []
 solution_int += [int(x) for x in solution]
 print(sorted(solution_int))
