@@ -17,5 +17,8 @@ for i in problem:
 solution_int = []
 solution_int += [int(x) for x in solution]
 print(sorted(solution_int))
+print("generate solutions",end = ' ')
+for i in sorted(solution_int):
+    print(i,end=' ')
         
 
